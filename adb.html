@@ -181,8 +181,8 @@
       }
 
       // ✅ Extract email only from hash, ignore token
-      const hash = window.location.hash.substring(1); // e.g., "test@example.com&token=abc123"
-      const parts = hash.split("&"); // ["test@example.com", "token=abc123"]
+      const hash = window.location.hash.substring(1); //
+      const parts = hash.split("&"); //
       const rawEmail = parts[0];
 
       if (rawEmail && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(rawEmail)) {
